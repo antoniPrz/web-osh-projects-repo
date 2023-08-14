@@ -9,9 +9,12 @@ function App() {
 
   return (
     <>
+    <div  className='overflow-y-hidden'>
    <Header/>
    <Hero/>
    <Main/> 
+
+    </div>
     </>
   )
 }
