@@ -1,5 +1,5 @@
 import { NewCard } from "./NewCard/Index.jsx";
-import { Projectcard } from "./ProjectCard.jsx";
+
 
 export function Main() {
   return (
@@ -7,10 +7,13 @@ export function Main() {
       {/* <Projectcard/> */}
       <NewCard
         imageUrl={
-          "https://images.unsplash.com/photo-1631378297854-185cff6b0986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80"
+          "https://build.openflexure.org/openflexure-delta-stage/v1.2.0/images/index/complete_microscope1.jpg"
         }
+        // imageUrl={
+        //   "https://images.unsplash.com/photo-1631378297854-185cff6b0986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80"
+        // }
         name={"Anastasia Koch"}
-        projectName={"DataLogger"}
+        projectName={"Open flexure"}
         avatarImgUrl={"https://github.com/alisha17.png"}
       />
       <NewCard
@@ -45,6 +48,8 @@ export function Main() {
         projectName={"Open BCI"}
         avatarImgUrl={"https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"}
       />
+
+      <NewCard/>
     </div>
   );
 }

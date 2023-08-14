@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <div  className='overflow-y-hidden'>
+    <div  className=''>
    <Header/>
    <Hero/>
    <Main/> 

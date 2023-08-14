@@ -1,4 +1,24 @@
-export function NewCard({imageUrl, name ,description,projectName,avatarImgUrl}) {
+import PropTypes from 'prop-types'
+
+export function NewCard({imageUrl, name ,projectName,avatarImgUrl}) {
+
+
+  NewCard.propTypes = {
+    imageUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    projectName:  PropTypes.string.isRequired,
+    avatarImgUrl:  PropTypes.string.isRequired,
+  }
+
+  NewCard.defaultProps = {
+    imageUrl: 'https://images.unsplash.com/photo-1631378297854-185cff6b0986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80',
+    name: 'Nombre',
+    projectName: 'Nombre del proyecto',
+    avatarImgUrl: 'https://images.unsplash.com/photo-1593349480506-8433634cdcbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9ib3QlMjBmYWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60'
+
+
+  }
+
     return (
         <div className="max-w-md mx-4 bg-white border  border-black  ">
 
